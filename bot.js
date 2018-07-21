@@ -6,10 +6,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('Pastèque');
+    if (message.content === 'Bonjour') {
+    	message.reply('Au revoir');
   	}
 });
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
+
+client.on('message', message => {
+    if (message.content === 'Au revoir') {
+        message. reply('Adieu'); 
+    }
+}); 
