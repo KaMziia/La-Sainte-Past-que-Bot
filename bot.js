@@ -19,3 +19,9 @@ client.on('message', message => {
         message. reply('Adieu'); 
     }
 }); 
+
+
+client.on('= play url', message => {
+    if (play) 
+    }
+}); 
