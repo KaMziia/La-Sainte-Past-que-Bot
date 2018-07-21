@@ -18,10 +18,4 @@ client.on('message', message => {
     if (message.content === 'Au revoir') {
         message. reply('Adieu'); 
     }
-}); 
-
-
-client.on('= play url', message => {
-    if (play) 
-    }
-}); 
+}) ; 
