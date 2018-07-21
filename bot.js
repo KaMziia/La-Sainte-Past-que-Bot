@@ -11,15 +11,5 @@ client.on('message', message => {
   	}
 });
 
-client.on('presenceUpdate', (oldMember,newMember) => {
-    console.log(' oldMumber speaking'+oldMember.speaking+' nick '+oldMember.displayName);
-    console.log(' newMember speaking'+newMember.speaking+' nick '+newMember.displayName);
-});
-
-client.on('guildMemberAdd', member => {
-    console.log('new member joinedAt '+ member.joinedAt);
-    console.log('new member joinedTimestamp '+ member.joinedTimestamp);
-});
-
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
